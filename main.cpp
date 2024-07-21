@@ -5,14 +5,14 @@ int chooseOperator(){
     int num1;
     int num2;
 
+    std::cout << "Choose an operator: ";
+    std::cin >> operatorId;
+    
     std::cout << "Enter the first number: " << '\n';
     std::cin >> num1;
     std::cout << "Enter the second number: " << '\n';
     std::cin >> num2;
-
-
-    std::cout << "Choose an operator: ";
-    std::cin >> operatorId;
+    
     if (operatorId == 'a') {
         std::cout << num1 << " + " << num2 << " = " << num1+num2 << '\n';
     } else if (operatorId == 's') {
@@ -24,6 +24,7 @@ int chooseOperator(){
     } else {
         std::cout << "Invalid character!";
     }
+
     chooseOperator();
     return 0;
 }
